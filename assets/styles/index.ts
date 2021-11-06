@@ -138,28 +138,6 @@ export default StyleSheet.create({
     textAlign: "center",
   },
 
-  // COMPONENT - MESSAGE
-  containerMessage: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "flex-start",
-    flexDirection: "row",
-    paddingHorizontal: 10,
-    width: DIMENSION_WIDTH - 100,
-  },
-  avatar: {
-    borderRadius: 30,
-    width: 60,
-    height: 60,
-    marginRight: 20,
-    marginVertical: 15,
-  },
-  message: {
-    color: GRAY,
-    fontSize: 12,
-    paddingTop: 5,
-  },
-
   // COMPONENT - PROFILE ITEM
   containerProfileItem: {
     backgroundColor: WHITE,
@@ -191,11 +169,12 @@ export default StyleSheet.create({
     paddingTop: 25,
     paddingBottom: 5,
     color: DARK_GRAY,
-    fontSize: 15,
     textAlign: "center",
+    fontSize: 24,
+    fontWeight: "bold",
   },
   descriptionProfileItem: {
-    color: GRAY,
+    color: DARK_GRAY,
     textAlign: "center",
     paddingBottom: 20,
     fontSize: 13,
@@ -211,7 +190,7 @@ export default StyleSheet.create({
     paddingHorizontal: 10,
   },
   infoContent: {
-    color: GRAY,
+    color: DARK_GRAY,
     fontSize: 13,
   },
 
