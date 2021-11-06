@@ -7,18 +7,18 @@ import {
   View,
   FlatList,
 } from "react-native";
-import { Icon, Message } from "../components";
+import { Icon, ActivityItem } from "../components";
 import DEMO from "../assets/data/demo";
 import styles, { DARK_GRAY } from "../assets/styles";
 
-const Messages = () => (
+const Activity = () => (
   <ImageBackground
     source={require("../assets/images/bg.png")}
     style={styles.bg}
   >
     <View style={styles.containerMessages}>
       <View style={styles.top}>
-        <Text style={styles.title}>Messages</Text>
+        <Text style={styles.title}>Activity Feed</Text>
         <TouchableOpacity>
           <Icon name="ellipsis-vertical" color={DARK_GRAY} size={20} />
         </TouchableOpacity>
@@ -27,18 +27,10 @@ const Messages = () => (
       <FlatList
         data={DEMO}
         keyExtractor={(item, index) => index.toString()}
-        renderItem={({ item }) => (
-          <TouchableOpacity>
-            <Message
-              image={item.image}
-              name={item.name}
-              lastMessage={item.message}
-            />
-          </TouchableOpacity>
-        )}
+        renderItem={({ item }) => <TouchableOpacity></TouchableOpacity>}
       />
     </View>
   </ImageBackground>
 );
 
-export default Messages;
+export default Activity;
