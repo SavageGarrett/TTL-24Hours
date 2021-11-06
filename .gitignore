@@ -14,3 +14,6 @@ web-build/
 
 # vscode
 .vscode/
+
+# auth env
+#/dj_auth0_project/.env
