@@ -4,7 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Home, Matches, Activity, Profile } from "../screens";
 import { PRIMARY_COLOR, DARK_GRAY, BLACK, WHITE } from "../assets/styles";
-import TabBarIcon from "./TabBarIcon";
+import TabBarIcon from "../components/TabBarIcon";
 
 const Tab = createBottomTabNavigator();
 

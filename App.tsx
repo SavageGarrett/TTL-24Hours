@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import MainNavigation from "./components/MainNavigation";
+import MainNavigation from "./navigation/MainNavigation";
 import { Auth0Provider, useAuth0 } from "@auth0/auth0-react";
 import LoginButton from "./components/LoginButton";
 import Login from "./screens/Login"
