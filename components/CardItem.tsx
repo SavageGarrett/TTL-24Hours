@@ -9,6 +9,7 @@ import styles, {
   STAR_ACTIONS,
   WHITE,
 } from "../assets/styles";
+import MoreDetails from "./MoreDetails";
 
 const CardItem = ({
   description,
@@ -47,7 +48,8 @@ const CardItem = ({
 
       {/* NAME */}
       <Text style={nameStyle}>{name}</Text>
-
+      {/* MORE DETAILS */}
+      {hasActions && <MoreDetails />}
       {/* DESCRIPTION */}
       {description && (
         <Text style={styles.descriptionCardItem}>{description}</Text>
