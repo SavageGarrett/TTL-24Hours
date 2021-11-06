@@ -1,24 +1,26 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import MainNavigation from "./components/MainNavigation";
+import MainNavigation from "./navigation/MainNavigation";
+import AuthNavigation from "./navigation/AuthNavigation";
+import SignUpFlow from "./navigation/SignUpFlow";
 
-
-const Stack = createStackNavigator();
+const AppStack = createStackNavigator();
 
 const App = () => (
+  // App Stack
   <NavigationContainer>
-    <Stack.Navigator>
-      <Stack.Screen
+    <AppStack.Navigator>
+      <AppStack.Screen
         name="Tab"
         options={{ headerShown: false, animationEnabled: false }}
       >
-        {() => (
-          <MainNavigation></MainNavigation>
-        )}
-      </Stack.Screen>
-    </Stack.Navigator>
+        {() => <MainNavigation></MainNavigation>}
+      </AppStack.Screen>
+    </AppStack.Navigator>
+
+    {/*   Auth Stack  */}
+    {/* <SignUpFlow /> */}
   </NavigationContainer>
 );
 
