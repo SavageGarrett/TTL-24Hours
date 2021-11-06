@@ -7,27 +7,27 @@ import {
   TouchableOpacity,
   SafeAreaView,
 } from "react-native";
-import { withNavigation } from "react-navigation";
 import { Icon, ProfileItem } from "../../components";
 import styles, { WHITE } from "../../assets/styles";
 import LoginButton from "../../components/LoginButton";
 import NextButton from "./NextButton";
-import { NavigationContainer } from "@react-navigation/native";
+import { useNavigation } from "@react-navigation/native";
+
 interface IProps {
   onNext: any;
-  navigation: any;
 }
-const Signup = ({ onNext, navigation }: IProps) => {
+const Signup = ({ onNext }: IProps) => {
+  const navigation = useNavigation();
   return (
     <SafeAreaView>
       <ImageBackground
         source={require("../../assets/images/bg.png")}
         style={styles.bg}
       >
-        <NextButton onNext={() => navigation.navigate("Activity")} />
+        <NextButton onNext={() => navigation.navigate("Tab")} />
       </ImageBackground>
     </SafeAreaView>
   );
 };
 
-export default withNavigation(Signup);
+export default Signup;

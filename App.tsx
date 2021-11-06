@@ -11,20 +11,17 @@ const App = () => (
   // App Stack
   <NavigationContainer>
     <AppStack.Navigator>
-      {loggedIn ? (
-        <AppStack.Screen
-          name="Tab"
-          options={{ headerShown: false, animationEnabled: false }}
-        >
-          {() => <MainNavigation></MainNavigation>}
-        </AppStack.Screen>
-      ) : (
-        <AppStack.Screen
-          options={{ headerShown: false, animationEnabled: false }}
-          name="Signup"
-          component={Signup}
-        />
-      )}
+      <AppStack.Screen
+        name="Tab"
+        options={{ headerShown: false, animationEnabled: false }}
+      >
+        {() => <MainNavigation></MainNavigation>}
+      </AppStack.Screen>
+      <AppStack.Screen
+        options={{ headerShown: false, animationEnabled: false }}
+        name="Signup"
+        component={Signup}
+      />
     </AppStack.Navigator>
   </NavigationContainer>
 );
