@@ -2,9 +2,9 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
+    "android": "expo start --https --android",
+    "ios": "expo start --https --ios",
+    "web": "expo start --https --web",
     "eject": "expo eject"
   },
   "dependencies": {
